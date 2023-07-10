@@ -15,8 +15,11 @@ const listContacts = async () => {
 // Функція, яка повертає об'єкт контакту з таким id. Повертає null, якщо контакт з таким id не знайдений.
   const getContactById = async (contactId) => {
         const allContacts = await listContacts();
-        const contactById = allContacts.filter(item => item.id === contactId);
-        return contactById || null;
+        const contactById = allContacts.find(item => item.id === contactId);
+        if (!contactById) {
+          return console.log(null);
+        }
+        return contactById;
   }
 
 // Функція, яка повертає об'єкт видаленого контакту. Повертає null, якщо контакт з таким id не знайдений.
