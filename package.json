@@ -1,0 +1,29 @@
+{
+  "name": "hw-01-node.js-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "start:dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InnaKovrizhenko/hw-01-Node.js-CLI.git"
+  },
+  "keywords": [],
+  "author": "inna kovrizhenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/InnaKovrizhenko/hw-01-Node.js-CLI/issues"
+  },
+  "homepage": "https://github.com/InnaKovrizhenko/hw-01-Node.js-CLI#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "commander": "^11.0.0",
+    "nanoid": "^3.3.4"
+  }
+}
